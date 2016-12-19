@@ -1,0 +1,58 @@
+body {background-color: #CCCCCC; font-family: Arial; line-height: 25px; word-wrap:break-word;}
+#responsive-menu {
+			background:#DEB25E;padding:10px 5px;
+		}
+#responsive-menu-list {
+			display:block;
+		}
+		.menu-item {
+			display:inline-block;
+			padding: 0px 15px;
+			border-right: #E8C47D 1px solid;
+		}
+.menu-item a {color:#FFF;text-decoration:none;}
+#menu-expand-collapse{display:none;cursor:pointer;}			
+#page-content {margin: 0 auto 60px;	padding: 20px; background-color: #FFFFFF;}
+#main-content {float:left; width:80%;}
+#sidebar {float:left; width:20%; padding-top: 20px;}
+#header {display:none;}
+#footer{clear:both; width:auto; text-align:center; border-top: #CCCCCC 2px solid;}
+.nice{color:blue;font-size: 28px;}
+#login-panel {background-color: #EFEFED;}
+#sidebar input {margin: 10px 20px; max-width:80%;}
+#header input {margin: 10px; max-width: 140px;}
+img {-ms-interpolation-mode: bicubic; border: 0; height: auto; max-width: 100%; vertical-align: middle;}
+
+@media screen and (min-width: 1224px) {	
+	#page-content {width: 70%;}
+}
+@media screen and (min-width: 1044px) and (max-width: 1224px) {
+	#page-content {width: 80%;}
+}
+@media screen and (min-width: 844px) and (max-width: 1044px) {
+	#page-content {width: 90%;}
+}
+@media screen and (max-width: 844px) {
+	#page-content {width: auto; margin: 0;}
+	#main-content {float:left; width:100%;}
+	#sidebar {display:none;}
+	#header {display:block;}
+    #login-panel{width: auto;margin: 0;}
+}
+@media screen and (max-width: 600px) {
+			#responsive-menu-list {
+				display:none;
+				width: 100%;
+			}
+			.menu-item {padding: 10px 5px;border-bottom: #E8C47D 1px solid;border-right: #ccc 1px none;display: block;}
+			#menu-expand-collapse{display:block;text-align:right;}
+		}
+
+@media screen and (max-width: 600px) {
+			#responsive-menu-list {
+				display:none;
+				width: 100%;
+			}
+			.menu-item {padding: 10px 5px;border-bottom: #E8C47D 1px solid;border-right: #ccc 1px none;display: block;}
+			#menu-expand-collapse{display:block;text-align:right;}
+		}
